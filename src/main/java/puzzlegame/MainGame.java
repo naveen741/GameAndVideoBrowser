@@ -23,6 +23,7 @@ public class MainGame {
 				break;
 			case 3:
 				new MediaPlayer();
+				break;
 			case 4:
 				flag=false;
 				break;
