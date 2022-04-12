@@ -100,13 +100,12 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	    check1(e);
 	    check2(e);
 	    check3(e);
-	     
-	    if(b1.getLabel().equals("1")&&b2.getLabel().equals("2")&&b3.getLabel()    
-	            .equals("3")&&b4.getLabel().equals("4")&&b5.getLabel().equals("5")    
-	            &&b6.getLabel().equals("6")&&b7.getLabel().equals("7")&&b8.getLabel()    
-	            .equals("8")&&b9.getLabel().equals("")){     
-	            JOptionPane.showMessageDialog(this,"Congratulations! You won.");    
-	    }    
+	    check4(e);
+	    check5(e);
+	    
+	    
+	    
+	        
 	}    
 	void check1(ActionEvent e) {
 		if(e.getSource()==b1){  
@@ -135,7 +134,9 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b2.setLabel("");  
 	        }  
 	    }  
-	    if(e.getSource()==b3){  
+	}
+	void check2(ActionEvent e) {
+		if(e.getSource()==b3){  
 	        String label=b3.getLabel();  
 	        if(b2.getLabel().equals("")){  
 	            b2.setLabel(label);  
@@ -146,9 +147,7 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b3.setLabel("");  
 	        }  
 	    }  
-	}
-	void check2(ActionEvent e) {
-		if(e.getSource()==b4){  
+	    if(e.getSource()==b4){  
 	        String label=b4.getLabel();  
 	        if(b1.getLabel().equals("")){  
 	            b1.setLabel(label);  
@@ -163,7 +162,9 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b4.setLabel("");  
 	        }  
 	    }  
-	    if(e.getSource()==b5){  
+	}
+	void check3(ActionEvent e) {
+		if(e.getSource()==b5){  
 	        String label=b5.getLabel();  
 	        if(b2.getLabel().equals("")){  
 	            b2.setLabel(label);  
@@ -196,9 +197,9 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b5.setLabel(label);  
 	            b6.setLabel("");  
 	        }  
-	    }
+	    }  
 	}
-	void check3(ActionEvent e) {
+	void check4(ActionEvent e){
 		if(e.getSource()==b7){  
 	        String label=b7.getLabel();  
 	        if(b4.getLabel().equals("")){  
@@ -225,7 +226,9 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b8.setLabel("");  
 	        }  
 	    }  
-	    if(e.getSource()==b9){  
+	}
+	void check5(ActionEvent e) {
+		if(e.getSource()==b9){  
 	        String label=b9.getLabel();  
 	        if(b6.getLabel().equals("")){  
 	            b6.setLabel(label);  
@@ -235,6 +238,12 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	            b8.setLabel(label);  
 	            b9.setLabel("");  
 	        }  
-	    } 
+	    }  
+	    if(b1.getLabel().equals("1")&&b2.getLabel().equals("2")&&b3.getLabel()    
+	            .equals("3")&&b4.getLabel().equals("4")&&b5.getLabel().equals("5")    
+	            &&b6.getLabel().equals("6")&&b7.getLabel().equals("7")&&b8.getLabel()    
+	            .equals("8")&&b9.getLabel().equals("")){     
+	            JOptionPane.showMessageDialog(this,"Congratulations! You won.");    
+	    }
 	}
 }
