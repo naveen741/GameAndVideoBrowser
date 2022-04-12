@@ -7,7 +7,17 @@ import java.util.Collections;
 import javax.swing.JOptionPane;  
 public class ArrangeNumber extends Frame implements ActionListener {
 	private static final long serialVersionUID = 1L;
-	Button b1,b2,b3,b4,b5,b6,b7,b8,b9,shuffle,exit;  
+	Button b1,
+	b2,
+	b3,
+	b4,
+	b5,
+	b6,
+	b7,
+	b8,
+	b9,
+	shuffle,
+	exit;  
 	ArrayList<String> list=new ArrayList<String>(9);
 ArrangeNumber(){  
     super("ArrangeNumber");  
