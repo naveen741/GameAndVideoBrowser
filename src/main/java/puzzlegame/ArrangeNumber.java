@@ -164,25 +164,17 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	    }  
 	}
 	void check3(ActionEvent e) {
-		if(e.getSource()==b5){  
-	        String label=b5.getLabel();  
-	        if(b2.getLabel().equals("")){  
-	            b2.setLabel(label);  
-	            b5.setLabel("");  
-	        }  
+		if(e.getSource()==b9){  
+	        String label=b9.getLabel();  
 	        if(b6.getLabel().equals("")){  
 	            b6.setLabel(label);  
-	            b5.setLabel("");  
-	        }  
-	        if(b4.getLabel().equals("")){  
-	            b4.setLabel(label);  
-	            b5.setLabel("");  
+	            b9.setLabel("");  
 	        }  
 	        if(b8.getLabel().equals("")){  
 	            b8.setLabel(label);  
-	            b5.setLabel("");  
+	            b9.setLabel("");  
 	        }  
-	    }  
+	    }
 	    if(e.getSource()==b6){  
 	        String label=b6.getLabel();  
 	        if(b9.getLabel().equals("")){  
@@ -228,15 +220,24 @@ public class ArrangeNumber extends Frame implements ActionListener {
 	    }  
 	}
 	void check5(ActionEvent e) {
-		if(e.getSource()==b9){  
-	        String label=b9.getLabel();  
+		
+		if(e.getSource()==b5){  
+	        String label=b5.getLabel();  
+	        if(b2.getLabel().equals("")){  
+	            b2.setLabel(label);  
+	            b5.setLabel("");  
+	        }  
 	        if(b6.getLabel().equals("")){  
 	            b6.setLabel(label);  
-	            b9.setLabel("");  
+	            b5.setLabel("");  
+	        }  
+	        if(b4.getLabel().equals("")){  
+	            b4.setLabel(label);  
+	            b5.setLabel("");  
 	        }  
 	        if(b8.getLabel().equals("")){  
 	            b8.setLabel(label);  
-	            b9.setLabel("");  
+	            b5.setLabel("");  
 	        }  
 	    }  
 	    if(b1.getLabel().equals("1")&&b2.getLabel().equals("2")&&b3.getLabel()    
