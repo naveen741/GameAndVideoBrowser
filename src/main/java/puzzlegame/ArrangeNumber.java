@@ -53,7 +53,7 @@ ArrangeNumber(){
     setVisible(true);  
     setResizable(false);
 }  
-void shuffle() {
+void shuffleArea() {
 	for(int i=1;i<9;i++) {
 		list.add(""+i);
 	}
@@ -75,7 +75,7 @@ public static void main(String[] args) {
 }
 public void actionPerformed(ActionEvent e){  
 	if(((Button) e.getSource()).getLabel().equals("shuffle"))
-		shuffle();
+		shuffleArea();
 	else if(((Button) e.getSource()).getLabel().equals("Exit"))
 		dispose();
     if(e.getSource()==b1){  
